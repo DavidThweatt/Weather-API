@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="head">
+          <header>
+            <h1>Weather API</h1>
+          </header>
+        </div>
+        <div class="main-content">
+          <div class="deg-div">
+            <input type="radio" id="F" name="deg" value="F" checked="checked" />
+            <label id="F-label" for="F">F°</label>
+            <input type="radio" id="C" name="deg" value="C" />
+            <label id="C-label" for="C">C°</label>
+          </div>
+          <div class="input-div">
+            <input
+              id="location-input"
+              type="text"
+              name="city-name"
+              placeholder="e.g. London"
+            />
+            <button id="search-btn">Search</button>
+          </div>
+          <div id="dom-div">
+            <div class="h2">
+              <h2 id="location-h2"></h2>
+            </div>
+            <div class="info">
+              <p id="temp_div">Current:</p>
+              <p id="low_div">Low:</p>
+              <p id="high_div">High:</p>
+              <p id="description_div">Weather:</p>
+              <div id="icon_div"><img id="icons" src="" alt="" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
+        <p class="footer_p">Created by David Thweatt</p>
+      </footer>
+    </div>
+  </body>
+</html>
