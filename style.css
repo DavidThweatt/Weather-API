@@ -117,6 +117,11 @@ h1 {
   margin: auto;
 }
 
+.info p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 #temp_div {
   padding: 5px;
   font-size: 18px;

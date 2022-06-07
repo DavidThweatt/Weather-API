@@ -55,10 +55,10 @@ function weatherData(data) {
 
   function showData() {
     location_title.textContent = locationInput.value;
-    temp_div.innerText = "Current:  " + current_temp;
-    low_div.innerText = "Low:  " + low_temp;
-    high_div.innerText = "High:  " + high_temp;
-    description_div.innerText = "Weather:  " + weather_description;
+    temp_div.innerText = current_temp;
+    low_div.innerText = low_temp;
+    high_div.innerText = high_temp;
+    description_div.innerText = weather_description;
     icons.src = icon_url;
   }
   showData();
